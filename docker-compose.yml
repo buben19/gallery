@@ -40,7 +40,6 @@ services:
             - PGADMIN_LISTEN_PORT=5050
         volumes:
             - ./servers.json:/pgadmin4/servers.json
-            - ./pgpass.conf:/pgadmin4/pgpass.conf
     prometheus:
         image: prom/prometheus
         restart: always
